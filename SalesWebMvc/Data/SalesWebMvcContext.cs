@@ -12,7 +12,9 @@ namespace SalesWebMvc.Models
             : base(options)
         {
         }
-
-        public DbSet<SalesWebMvc.Models.Department> Department { get; set; }
+        //inserindo Dsets que faz o modelo ser reconhecido pelo entity framerwork
+        public DbSet<Department> Department { get; set; }
+        public DbSet<Seller> Sellers { get; set; }
+        public DbSet <SalesRecord>SalesRecords { get; set; }
     }
 }
